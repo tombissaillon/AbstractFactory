@@ -1,13 +1,13 @@
-class ClamPizza extends Pizza {
+class PepperoniPizza extends Pizza {
 	PizzaIngredientFactory ingredientFactory;
  
-	public ClamPizza(PizzaIngredientFactory ingredientFactory) {
+	public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
 		this.ingredientFactory = ingredientFactory;
 	}
  
 	void prepare() {
 		System.out.println("Preparing " + name);
-        clam=ingredientFactory.createClam();
+        pepperoni=ingredientFactory.createPepperoni();
 		dough = ingredientFactory.createDough();
 		sauce = ingredientFactory.createSauce();
 		cheese = ingredientFactory.createCheese();
