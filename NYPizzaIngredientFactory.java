@@ -4,7 +4,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 		return new ThinCrustDough();
 	}
  
-	public Sauce createSauce() {
+	public MarinaraSauce createSauce() {
 		return new MarinaraSauce();
 	}
  

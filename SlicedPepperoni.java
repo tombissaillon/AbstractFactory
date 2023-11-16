@@ -1,4 +1,5 @@
 
-public class SlicedPepperoni {
+public class SlicedPepperoni extends Pepperoni {
+    public String toString;
 
 }
