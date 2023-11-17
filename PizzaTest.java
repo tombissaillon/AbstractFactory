@@ -1,13 +1,14 @@
 public class PizzaTest {
 
     public static void main(String[] args) {
-        PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
         PizzaStore nyPizzaStore = new NYPizzaStore();
 
         Pizza NYCheesePizza = nyPizzaStore.orderPizza("cheese");
-        System.out.println("Ordered a " + nyPizzaStore.CheesePizza.getName() + "\n");
+        System.out.println(NYCheesePizza);
 
-        Pizza ChicagoVeggiePizza = chicagoPizzaStore.orderPizza("pepperoni");
-        System.out.println("Ordered a " + nyPepperoniPizza.getName() + "\n");
+         PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
+
+        Pizza ChicagoVeggiePizza = chicagoPizzaStore.orderPizza("veggie");
+        System.out.println(ChicagoVeggiePizza);
     }
 }
